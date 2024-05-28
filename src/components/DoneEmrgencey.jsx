@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '@mui/material/Button';
 import yes from '../assets/yes.png'
+import { Link } from 'react-router-dom';
 
 export default function DoneEmrgencey() {
 
@@ -13,8 +14,10 @@ return (
 <br></br> سوف يتصل بكم الممرض خلال دقيقه  </h1>
 </div>
 <br></br>
+<Link to={'/'}>
 <Button  sx={{backgroundColor:'#8598BE',fontSize:'20px',marginRight:'100px',marginTop:'20px',marginBottom:'20px'}} variant="contained">الصفحه الرئيسيه 
 </Button>
+</Link>
 
 </div>
     )
