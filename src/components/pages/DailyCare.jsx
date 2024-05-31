@@ -2,6 +2,7 @@ import React from 'react'
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import user from '../../assets/user.png'
 
 
 
@@ -9,7 +10,9 @@ import TextField from '@mui/material/TextField';
 export default function DailyCare() {
   return (
     <div className='form-div h-full'>
-       <div className='bg-blue-300  h-64 w-full'> </div>
+      <img className=' h-44 w-44 mt-20 mb-20 mr-16' src={user}/>
+       
+       
     <div className='image bg-gray-300 w-full h-1/2 rounded-full flex justify-center items-center'>
      
     </div>
