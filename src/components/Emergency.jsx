@@ -9,8 +9,8 @@ import Footer from './Footer';
 
 export default function Emergency() {
   return (
-    <div className='form-div h-full'>
-      <div className='image bg-gray-300 w-full h-1/2 rounded-full flex justify-center items-center'>
+    <div className='form-div h-full '>
+      <div className='image bg-gray-300 w-full h-1/2 rounded-full flex justify-center items-center '>
         <img src={emergency} alt="" srcset="" className='w-1/2 h-1/2 ' />
       </div>
        <Box sx={{display:'flex', flexDirection:'column' , gap:'10px'}}>
@@ -19,7 +19,7 @@ export default function Emergency() {
        <TextField id="outlined-basic" label="الحالة الطارئة" variant="outlined" />
        <Link to={'/doneEmergency'}><Button sx={{backgroundColor:'#8598BE',fontSize:'20px'}} variant="contained">طلب</Button></Link>
        </Box>
-       <Footer/>
+  
     </div>
   )
 }

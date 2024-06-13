@@ -17,17 +17,22 @@ import servicesIcon from './assets/ourserive.png'
 import Cards from "./components/Cards";
 function App() {
   return (
- <BrowserRouter>
-   <div className="main-app h-screen w-screen bg-[url('./background.png')] flex flex-col items-end">
-     <div className="setting mx-2 my-2">
-      <img src={setting}/> 
-     </div>
-     <div className="img self-center">
-      <img src={homePage} alt="" />
-     </div>
-     <Emergencybotton className="btn"/>
-     <Cards/>
-     <AppRutes/>
+   <div className="main-app">
+  
+     {/* <Emergency/>
+    <Footer/>
+     <Home/> */}
+
+         <BrowserRouter>
+         <AppRutes/>
+      {<Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/services' element={<Services/>}/>
+        <Route path='/team' element={<Team/>}/>
+        <Route path="/dailycare" element={<DailyCare/>}/>
+        <Route path="/emergency" element={<Emergency/>}/>
+    </Routes>}
+      </BrowserRouter>
    </div>
  </BrowserRouter>
   );
