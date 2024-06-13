@@ -27,6 +27,7 @@ function App() {
      </div>
      <Emergencybotton className="btn"/>
      <Cards/>
+     <AppRutes/>
    </div>
  </BrowserRouter>
   );

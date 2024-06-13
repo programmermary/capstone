@@ -5,8 +5,13 @@ import ServiecssCard from "./ServiecssCard"
 
 function Services() {
   return (
-    <div>
-    <ServiecssCard data={ServicesData}/>
+    <div >
+      {
+        ServicesData.map((index,service)=>{
+          <ServicesData data={service} key={index}/>
+        })
+      }
+    {/* <ServiecssCard data={ServicesData} key={index}/> */}
     </div>
   );
 }

@@ -17,7 +17,7 @@ export default function Home() {
         حالة طارئة
       </Button>
       </Link>
-      <Cards/>
+      <Cards className='transition-opacity'/>
       <Footer/>
     </div>
   )
